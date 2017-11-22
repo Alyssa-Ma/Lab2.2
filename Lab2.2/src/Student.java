@@ -1,10 +1,9 @@
-
 public class Student extends Person{
 	private String[] schedule;
 	private double GPA;
 	private long osis;
 		
-	public Student(int height, String firstName, String familyName, double weight)
+	public Student(int height, String firstName, String familyName, double weight, String[] schedule, double GPA, long osis)
 	
 	{
 		super(height, firstName, familyName, weight);
@@ -14,7 +13,6 @@ public class Student extends Person{
 	}
 
 	/**
-	 * @return the gPA
 	 */
 	public double getGPA() {
 		return GPA;
@@ -23,8 +21,8 @@ public class Student extends Person{
 	/**
 	 * @param gPA the gPA to set
 	 */
-	public void setGPA(double gPA) {
-		GPA = gPA;
+	public void setGPA(double GPA) {
+		GPA = GPA;
 	}
 
 	/**
@@ -39,6 +37,12 @@ public class Student extends Person{
 	 */
 	public void setOsis(long osis) {
 		this.osis = osis;
+	}
+
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return familyName + " , " + firstName ;
 	}
 
 	

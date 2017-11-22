@@ -1,6 +1,5 @@
 
 public abstract class Person {
-	private int height;
 	/**
 	 * @return the height
 	 */
@@ -56,7 +55,8 @@ public abstract class Person {
 	public void setWeight(double weight) {
 		this.weight = weight;
 	}
-
+	
+	private int height;
 	private String firstName, familyName;
 	private double weight;
 	
