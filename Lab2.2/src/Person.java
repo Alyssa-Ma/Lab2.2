@@ -1,19 +1,32 @@
 
 public abstract class Person {
+	
+	private int height;
+	private String firstName, familyName;
+	private double weight;
+	
+	//constructor method
+	public Person (int height, String firstName, String familyName, double weight) {
+		this.height = height;
+		this.firstName = firstName;
+		this.familyName = familyName;
+		this.weight = weight;
+	}
+	
+	public abstract String toString();
+	
 	/**
 	 * @return the height
 	 */
 	public int getHeight() {
 		return height;
 	}
-
 	/**
 	 * @param height the height to set
 	 */
 	public void setHeight(int height) {
 		this.height = height;
 	}
-
 	/**
 	 * @return the firstName
 	 */
@@ -55,20 +68,4 @@ public abstract class Person {
 	public void setWeight(double weight) {
 		this.weight = weight;
 	}
-	
-	private int height;
-	private String firstName, familyName;
-	private double weight;
-	
-	//constructor method
-	public Person (int height, String firstName, String familyName, double weight) {
-		this.height = height;
-		this.firstName = firstName;
-		this.familyName = familyName;
-		this.weight = weight;
-	}
-	
-	public abstract String toString();
-	
-	
 }
