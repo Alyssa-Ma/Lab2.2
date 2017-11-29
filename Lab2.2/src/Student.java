@@ -1,5 +1,5 @@
 public class Student extends Person{
-	//private String[] schedule;
+	private String[] schedule;
 	private double GPA;
 	private long osis;
 		
@@ -7,11 +7,12 @@ public class Student extends Person{
 
 	{
 		super(height, firstName, familyName, weight);
-		//this.schedule = schedule;
+		this.schedule = schedule;
 		this.GPA = GPA;
 		this.osis = osis;
 	}
-
+	
+	
 	/**
 	 */
 	public double getGPA() {

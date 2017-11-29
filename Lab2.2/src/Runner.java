@@ -1,8 +1,11 @@
 
 public class Runner {
-
+	static String[] firstNames = {"Anna","Benny","Carrie","David"};
+	static String[] familyNames = {"Amari","Bonjour","Cass","Deng"};
+	
 	public static void main(String[] args)
 	{
-		Student student1 = new Student();
+		Person[] students = {};
+		students = new Person[34];
 	}
 }
