@@ -7,5 +7,11 @@ public class Runner {
 	{
 		Person[] students = {};
 		students = new Person[34];
+		
+		for(Person student : Person)
+		{
+			System.out.println(Person);
+		}
+		
 	}
 }
